@@ -28,16 +28,10 @@ This agent simulates human-like decision-making by breaking down a problem into 
 * Clear and explainable recommendations
 * Prompt-driven agentic reasoning
 
-## 🧪 Example Use Case
+## 🎥 Demo Video
 
-**Input:** Should I focus on AI or DSA for placements?
-
-**Output:**
-
-* Option comparison
-* Pros and cons
-* Risk analysis
-* Final recommendation with reasoning
+Watch the agent in action here:
+https://www.loom.com/share/45f0b8ee0b994e33aa4811d78f6b25a7
 
 ## 🛠️ Tech Stack
 
