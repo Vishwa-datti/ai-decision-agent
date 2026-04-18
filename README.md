@@ -31,7 +31,7 @@ This agent simulates human-like decision-making by breaking down a problem into 
 ## 🎥 Demo Video
 
 Watch the agent in action here:
-https://www.loom.com/share/45f0b8ee0b994e33aa4811d78f6b25a7
+https://www.loom.com/share/8d80e6376fd8409ea9e88604b8911e77
 
 ## 🛠️ Tech Stack
 
