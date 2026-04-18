@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Intelligence Studio | AI Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="icon">⚖️</span>
+                <h1>Decision <span class="accent">Studio</span></h1>
+            </div>
+            <div class="header-actions">
+                <button id="settingsBtn" class="btn-icon" title="Settings">⚙️</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="input-panel glass">
+                <div class="field-group">
+                    <label for="query">What decision do you need to make?</label>
+                    <textarea id="query" placeholder="e.g. Should I focus on AI or DSA for placements?" rows="3"></textarea>
+                </div>
+                <div class="field-group">
+                    <label for="context">Additional Context (Optional)</label>
+                    <input type="text" id="context" placeholder="e.g. 4th year student, 3 months prep time...">
+                </div>
+                <button id="analyzeBtn" class="btn-primary">
+                    <span class="btn-text">Analyze Decision</span>
+                    <span class="loader"></span>
+                </button>
+            </section>
+
+            <section id="resultsPanel" class="results-panel hidden">
+                <div class="grid-layout">
+                    <!-- Options Card -->
+                    <div class="card glass option-card">
+                        <h3><span class="emoji">🔍</span> Possible Options</h3>
+                        <div id="optionsList" class="content-area"></div>
+                    </div>
+
+                    <!-- Risks Card -->
+                    <div class="card glass risk-card">
+                        <h3><span class="emoji">⚠️</span> Key Risks</h3>
+                        <div id="risksList" class="content-area"></div>
+                    </div>
+
+                    <!-- Recommendation Card -->
+                    <div class="card glass recommendation-card highlight">
+                        <h3><span class="emoji">✅</span> Recommendation</h3>
+                        <div id="finalRecommendation" class="content-area"></div>
+                        <div id="trustFactor" class="trust-footer"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="settingsModal" class="modal hidden">
+            <div class="modal-content glass">
+                <h2>Settings</h2>
+                <div class="field-group">
+                    <label for="apiKey">Gemini API Key</label>
+                    <input type="password" id="apiKey" placeholder="Enter your API key...">
+                    <small>Your key is stored locally in your browser and never sent elsewhere.</small>
+                </div>
+                <div class="modal-actions">
+                    <button id="saveSettings" class="btn-primary">Save Changes</button>
+                    <button id="closeSettings" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
